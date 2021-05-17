@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="n^{Z:x~)2yie]#Q=S(E|">mySprite</variable><variable id="AcWKyI;lk@$)meWmWgsU">mySprite2</variable><variable type="KIND_SpriteKind" id="EU1S%2L3o2taQ8W2#I}%">Player</variable><variable type="KIND_SpriteKind" id="vll8BjJHZARdN:is}T!U">Projectile</variable><variable type="KIND_SpriteKind" id="Cq!DCnscc6BxYZwAr5oM">Food</variable><variable type="KIND_SpriteKind" id="wmwp4|X0vpWRa3i,Pu:}">Enemy</variable><variable type="KIND_SpriteKind" id="r(NXCpKfNBe)V?pu44}0">NPC</variable></variables><block type="pxt-on-start" id="+%qW(5u)O*my;yy_c}.S" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id=".ew)G+PIB6JE0u?W5#S]"><field name="VAR" id="n^{Z:x~)2yie]#Q=S(E|">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="ePxJVo|x|URh0s@iz@Uo"><value name="img"><shadow type="screen_image_picker" id="~Ba2BvU{x+sr]uA!s[#B"><field name="img">img`
+. . . . . . . . . . . c c . . . 
+. . . . . . . c c c c 6 3 c . . 
+. . . . . . c 6 3 3 3 3 6 c . . 
+. . c c . c 6 c c 3 3 3 3 3 c . 
+. b 7 7 c 6 c 7 7 c 3 3 3 3 3 c 
+. f f 7 c 6 c 7 f f 3 3 3 3 3 c 
+. f f 7 c 6 c 7 f f 6 3 3 3 c c 
+. b 7 7 3 c 3 7 7 c 6 6 6 6 c c 
+. . b 7 7 3 7 7 c 3 3 3 3 3 3 c 
+. c c 7 7 7 7 7 b c c 3 3 3 3 c 
+c 7 7 6 7 7 7 6 b 7 7 c 3 3 c . 
+b 7 6 b 6 6 6 6 b b 7 c b b . . 
+c 6 7 7 b 6 b 7 7 7 6 c 6 7 b . 
+c 7 7 7 c 6 c 7 7 7 c 6 c 7 c . 
+c 7 7 7 7 c 7 7 7 7 c 6 c 7 c . 
+. c c c c c c c c c . . c c c . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"~Ba2BvU{x+sr]uA!s[#B"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="k.H{(2*w#uj#O4mVW4]O"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="5:d~%MY]I}lu;,4=U|J/"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="#}(MxDDTjxq3|x+x~kU^"><field name="VAR" id="n^{Z:x~)2yie]#Q=S(E|">mySprite</field></block></value><next><block type="tilemap_editor" id="Nw}uB]0*BEXvMLBK}epL"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data><next><block type="camerafollow" id=".X~85Gt9BR27ap|+]N:w"><value name="sprite"><block type="variables_get" id="Ut*nD9ak@OIrD0`}=U!R"><field name="VAR" id="n^{Z:x~)2yie]#Q=S(E|">mySprite</field></block></value><next><block type="variables_set" id="tud[*?#VsKxA!Te218fS"><field name="VAR" id="AcWKyI;lk@$)meWmWgsU">mySprite2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id=")sHuxAsjoqI/%N]P+fnk"><value name="img"><shadow type="screen_image_picker" id="cLJ=5z6YGx5g?U%P)V0o"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . c c c c c c . . . 
+. . . . . . c 5 5 5 5 5 c c . . 
+. . . . . c 5 5 5 5 5 5 5 5 c . 
+. . . . c b b b b b b 5 5 5 c . 
+. . . . c b b b b 1 b b c c . . 
+. . . . c 1 1 b b 1 1 1 c . . . 
+. . . c 1 1 1 1 b 1 1 1 c . . . 
+. . . c 1 1 1 1 b 1 1 1 b b c c 
+. . c c d 1 1 1 b 1 b 1 5 5 5 c 
+. . c c d 1 c 1 1 1 b 1 b b 5 c 
+. c c d d 1 1 1 1 1 b 1 f b 5 c 
+f d d d 1 1 1 1 1 b b b f . c c 
+f f f f f 1 1 1 b b 5 5 5 f . . 
+. . . . . f f f 5 5 5 5 5 f . . 
+. . . . . . . . f f f f f f . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"cLJ=5z6YGx5g?U%P)V0o"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="Q((#N_jkANJGty2?t$y}"><field name="MEMBER">NPC</field></shadow></value></block></value><next><block type="spritesetpos" id="Zm@bi9fDMc#/RFRsv}Er"><value name="sprite"><block type="variables_get" id="4=wgH`T;Ya=uKEbF@+lk"><field name="VAR" id="AcWKyI;lk@$)meWmWgsU">mySprite2</field></block></value><value name="x"><shadow type="positionPicker" id="uM80$x~n1:Dt^aUFfA:Y"><field name="index">36</field></shadow></value><value name="y"><shadow type="positionPicker" id="En*E3:ZQ2/?:QPSY(XH}"><field name="index">90</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
